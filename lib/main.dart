@@ -1,6 +1,3 @@
-
-import 'package:covid_tracker/Views/World_Stats.dart';
-import 'package:covid_tracker/Views/countries_list.dart';
 import 'package:covid_tracker/Views/splash_screen.dart';
 import 'package:flutter/material.dart';
 

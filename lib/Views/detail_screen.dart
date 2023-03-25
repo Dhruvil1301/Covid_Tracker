@@ -1,6 +1,5 @@
 import 'package:covid_tracker/Views/World_Stats.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 class DetailScreen extends StatefulWidget {
   String image;
   String name;
@@ -27,7 +26,7 @@ class _DetailScreenState extends State<DetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.name,style: GoogleFonts.lato()),
+        title: Text(widget.name,),
         centerTitle: true ,
       ),
       body: Column(
@@ -38,14 +37,14 @@ class _DetailScreenState extends State<DetailScreen> {
             alignment: Alignment.topCenter,
             children: [
               Padding(
-                padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*.067),
+                padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*.03),
                 child: Card(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: [
                         SizedBox(
-                          height: MediaQuery.of(context).size.height*.02,
+                          height:  MediaQuery.of(context).size.height*.02,
                         ),
                         ReusableRow(title: "TOTAL CASES", value: widget.totalcases.toString(),),
                         ReusableRow(title: "DEATHS", value: widget.totalDeaths.toString(),),

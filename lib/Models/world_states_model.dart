@@ -1,23 +1,23 @@
-/// updated : 1677921218402
-/// cases : 680549359
-/// todayCases : 11381
-/// deaths : 6804661
-/// todayDeaths : 13
-/// recovered : 653379183
-/// todayRecovered : 37329
-/// active : 20365515
-/// critical : 40649
-/// casesPerOneMillion : 87308
-/// deathsPerOneMillion : 873
-/// tests : 6945493595
-/// testsPerOneMillion : 874203.94
+/// updated : 1679689758752
+/// cases : 683118568
+/// todayCases : 47500
+/// deaths : 6824700
+/// todayDeaths : 213
+/// recovered : 656030604
+/// todayRecovered : 61804
+/// active : 20263264
+/// critical : 40091
+/// casesPerOneMillion : 87638
+/// deathsPerOneMillion : 875.5
+/// tests : 6957304555
+/// testsPerOneMillion : 875690.54
 /// population : 7944935131
 /// oneCasePerPeople : 0
 /// oneDeathPerPeople : 0
 /// oneTestPerPeople : 0
-/// activePerOneMillion : 2563.33
-/// recoveredPerOneMillion : 82238.45
-/// criticalPerOneMillion : 5.12
+/// activePerOneMillion : 2550.46
+/// recoveredPerOneMillion : 82572.18
+/// criticalPerOneMillion : 5.05
 /// affectedCountries : 231
 
 class WorldStatesModel {
@@ -32,7 +32,7 @@ class WorldStatesModel {
       int? active, 
       int? critical, 
       int? casesPerOneMillion, 
-      int? deathsPerOneMillion, 
+      double? deathsPerOneMillion, 
       int? tests, 
       double? testsPerOneMillion, 
       int? population, 
@@ -99,7 +99,7 @@ class WorldStatesModel {
   int? _active;
   int? _critical;
   int? _casesPerOneMillion;
-  int? _deathsPerOneMillion;
+  double? _deathsPerOneMillion;
   int? _tests;
   double? _testsPerOneMillion;
   int? _population;
@@ -121,7 +121,7 @@ class WorldStatesModel {
   int? get active => _active;
   int? get critical => _critical;
   int? get casesPerOneMillion => _casesPerOneMillion;
-  int? get deathsPerOneMillion => _deathsPerOneMillion;
+  double? get deathsPerOneMillion => _deathsPerOneMillion;
   int? get tests => _tests;
   double? get testsPerOneMillion => _testsPerOneMillion;
   int? get population => _population;

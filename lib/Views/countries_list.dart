@@ -1,6 +1,5 @@
 import 'package:covid_tracker/Services/states_services.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:shimmer/shimmer.dart';
 
 import 'detail_screen.dart';
@@ -93,8 +92,8 @@ class _CountriesListState extends State<CountriesList> {
                                        subtitle: Text(snapshot.data![index]["cases"].toString()),
 
                                        leading: Image(
-                                         height: 45,
-                                         width: 45,
+                                         height: 40,
+                                         width: 40,
                                          image: NetworkImage(
                                              snapshot.data![index]['countryInfo']["flag"]
                                          ),),
